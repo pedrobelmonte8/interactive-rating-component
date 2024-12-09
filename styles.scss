@@ -1,0 +1,97 @@
+$orange: #fb7413;
+$white: #ffffff;
+$light-grey: #959eac;
+$dark-blue: #252d37;
+$dark-blue-back: #3a434e;
+$very-dark-blue: #121417;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: $very-dark-blue;
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+    max-width: 300px;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: $dark-blue;
+    h1 {
+      color: $white;
+    }
+    .description {
+      color: $light-grey;
+    }
+    .rate {
+      display: flex;
+      justify-content: space-between;
+      span:hover,
+      span:active {
+        background-color: $orange;
+        color: $dark-blue-back;
+        cursor:pointer;
+      }
+    }
+    span.circle {
+      display: inline-flex;
+      width: 45px;
+      height: 45px;
+      color: $light-grey;
+      background-color: $dark-blue-back;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      box-sizing: border-box;
+      font-weight: 700;
+    }
+    span.selected{
+      background-color: $white;
+      color: $dark-blue-back;
+    }
+    button {
+      &:hover,
+      &:active {
+        background-color: $white;
+        cursor: pointer;
+      }
+      background-color: $orange;
+      color: $dark-blue-back;
+      font-weight: 700;
+      width: 100%;
+      padding: 15px 0;
+      border-radius: 25px;
+      letter-spacing: 0.2rem;
+      border: none;
+    }
+  }
+  #secondMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .rateMessage{
+      margin-top: 40px;
+      margin-bottom: 40px;
+      background-color: #3e444a;
+      padding: 5px 10px;
+      color: $orange;
+      border-radius: 25px;
+    }
+    .description{
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
+}

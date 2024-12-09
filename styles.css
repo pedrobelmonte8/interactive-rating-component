@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121417;
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
+  max-width: 300px;
+  margin: 25px;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #252d37;
+}
+body main h1 {
+  color: #ffffff;
+}
+body main .description {
+  color: #959eac;
+}
+body main .rate {
+  display: flex;
+  justify-content: space-between;
+}
+body main .rate span:hover,
+body main .rate span:active {
+  background-color: #fb7413;
+  color: #3a434e;
+  cursor: pointer;
+}
+body main span.circle {
+  display: inline-flex;
+  width: 45px;
+  height: 45px;
+  color: #959eac;
+  background-color: #3a434e;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+body main span.selected {
+  background-color: #ffffff;
+  color: #3a434e;
+}
+body main button {
+  background-color: #fb7413;
+  color: #3a434e;
+  font-weight: 700;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 25px;
+  letter-spacing: 0.2rem;
+  border: none;
+}
+body main button:hover, body main button:active {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+body #secondMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #secondMain .rateMessage {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #3e444a;
+  padding: 5px 10px;
+  color: #fb7413;
+  border-radius: 25px;
+}
+body #secondMain .description {
+  margin-top: 15px;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
